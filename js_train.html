@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<form method="post" class="form">
+		<h2>Tất cả input không được để trống</h2>
+		<div class="input-aria">
+			<label class="label" for="name">Tên</label>
+			<input id="name" type="text" value="" name="name" class="input"
+				   placeholder="Nhập tên ..." onkeyup="checkName()">
+			<span class="error" id="name-error"></span>
+		</div>
+		<div class="input-aria">
+			<label class="label" for="age">Tuổi</label>
+			<input id="age" type="text" value="" name="age" class="input"
+				   placeholder="Nhập tuổi ..." onkeyup="checkAge()">
+			<span class="error" id="age-error"></span>
+		</div>
+		<div class="input-aria">
+			<label class="label" for="email">Email</label>
+			<input id="email" type="text" value="" name="email" class="input"
+				   placeholder="Nhập email ..." onkeyup="checkEmail()">
+			<span class="error" id="email-error"></span>
+		</div>
+		<div class="input-aria">
+			<label class="label" for="phone">Số điện thoại</label>
+			<input id="phone" type="text" value="" name="phone" class="input"
+				   placeholder="Nhập số điện thoại ..." onkeyup="checkPhone()">
+			<span class="error" id="phone-error"></span>
+		</div>
+		<button class="display-block input" id="check" type="button" >Enter</button>
+	</form>
+	<script src="function.js"></script>
+</body>
+</html>
